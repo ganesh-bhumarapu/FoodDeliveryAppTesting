@@ -19,11 +19,13 @@ public class AdminPage extends BasePage{
     By saveProductBtn = By.xpath("//div[@class='add-form']/button");
 
     public void adminLogin(){
+        logger.info("Starting admin login process...");
         RedirectTo("https://food-ordering-app-z99l.vercel.app");
         Click(adminBtn);
         EnterText(loginemail, "admin@food.com");
         EnterText(loginpassword, "admin123");
         Click(loginBtn);
+        logger.info("Admin login process completed.");
     }
 
     public void clickAddProduct(){
@@ -31,6 +33,7 @@ public class AdminPage extends BasePage{
     }
 
     public void addProduct(){
+        logger.info("Starting add product process...");
         Click(addProductBtn);
         EnterText(productname, "Chicken Lasagne");
         EnterText(productprice, "499");
@@ -38,6 +41,7 @@ public class AdminPage extends BasePage{
         EnterText(image, "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzxkwxqoDCWlECnPAGBgpvjvnVwEcVX75wrk7v2wW0Tw&s=10");
         EnterText(description, "A classic chicken lasagne is a rich, comforting, and savory dish made by layering tender chicken");
         Click(saveProductBtn);
+        logger.info("Add product process completed.");
     }
 
     public String productAddedSuccessfully(String productName) {

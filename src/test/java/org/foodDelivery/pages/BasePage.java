@@ -7,11 +7,14 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.time.Duration;
 
 
 public class BasePage {
+    protected static final Logger logger = LogManager.getLogger(BasePage.class);
 
     public WebDriver driver;
 
@@ -20,6 +23,7 @@ public class BasePage {
     }
 
     public void RedirectTo(String url){
+        logger.info("Redirecting to URL: " + url);
         driver.get(url);
     }
 
@@ -27,10 +31,12 @@ public class BasePage {
         return driver.findElement(element);
     }
     public void Click(By btn){
+        logger.info("Clicking on element: " + btn.toString());
         FindElement(btn).click();
     }
 
     public void EnterText(By field, String text){
+        logger.info("Entering text: '" + text + "' into element: " + field.toString());
         FindElement(field).clear();
         FindElement(field).sendKeys(text);
     }
@@ -58,9 +64,11 @@ public class BasePage {
     }
 
     public String GetText(By element){
+        logger.info("Getting text from element: " + element.toString());
         return FindElement(element).getText();
     }
     public void SelectByDropdown(By path, String value){
+        logger.info("Selecting dropdown value: '" + value + "' for element: " + path.toString());
         Select option = new Select(FindElement(path));
         option.selectByVisibleText(value);
     }

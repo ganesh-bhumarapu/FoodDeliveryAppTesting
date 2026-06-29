@@ -1,0 +1,136 @@
+2026-06-29 23:04:49 INFO  Hooks - ---------------------------------------------------------
+2026-06-29 23:04:49 INFO  Hooks - Starting Scenario: Add Product
+2026-06-29 23:04:49 INFO  DriverFactory - Initializing ChromeDriver...
+2026-06-29 23:04:50 INFO  DriverFactory - ChromeDriver initialized successfully.
+2026-06-29 23:04:51 INFO  Admin - Executing step: Admin logged in and landed in dashboard
+2026-06-29 23:04:51 INFO  BasePage - Starting admin login process...
+2026-06-29 23:04:51 INFO  BasePage - Redirecting to URL: https://food-ordering-app-z99l.vercel.app
+2026-06-29 23:04:51 INFO  BasePage - Clicking on element: By.xpath: //div[@class='toggle-tabs']/button[2]
+2026-06-29 23:04:51 INFO  BasePage - Entering text: 'admin@food.com' into element: By.xpath: (//input[@placeholder='Enter your email'])
+2026-06-29 23:04:51 INFO  BasePage - Entering text: 'admin123' into element: By.xpath: //input[@placeholder='Enter your password']
+2026-06-29 23:04:51 INFO  BasePage - Clicking on element: By.xpath: //button[@class='btn-login']
+2026-06-29 23:04:52 INFO  BasePage - Admin login process completed.
+2026-06-29 23:04:53 INFO  Admin - Executing step: Admin selects add product
+2026-06-29 23:04:53 INFO  BasePage - Clicking on element: By.xpath: //a[@routerlink='/admin/products']
+2026-06-29 23:04:53 INFO  Admin - Executing step: Admin enters product details
+2026-06-29 23:04:53 INFO  BasePage - Starting add product process...
+2026-06-29 23:04:53 INFO  BasePage - Clicking on element: By.xpath: //button[@class='btn-primary']
+2026-06-29 23:04:53 INFO  BasePage - Entering text: 'Chicken Lasagne' into element: By.xpath: //input[@placeholder='Enter product name']
+2026-06-29 23:04:53 INFO  BasePage - Entering text: '499' into element: By.xpath: //input[@placeholder='Enter price']
+2026-06-29 23:04:53 INFO  BasePage - Selecting dropdown value: 'Non-Veg' for element: By.xpath: //select[@class='ng-untouched ng-pristine ng-valid']
+2026-06-29 23:04:53 INFO  BasePage - Entering text: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzxkwxqoDCWlECnPAGBgpvjvnVwEcVX75wrk7v2wW0Tw&s=10' into element: By.xpath: //input[@placeholder='Optional image URL']
+2026-06-29 23:04:53 INFO  BasePage - Entering text: 'A classic chicken lasagne is a rich, comforting, and savory dish made by layering tender chicken' into element: By.xpath: //textarea[@placeholder='Describe the product']
+2026-06-29 23:04:53 INFO  BasePage - Clicking on element: By.xpath: //div[@class='add-form']/button
+2026-06-29 23:04:54 INFO  BasePage - Add product process completed.
+2026-06-29 23:04:54 INFO  Admin - Executing step: Verify product is added
+2026-06-29 23:04:54 ERROR Hooks - Scenario Failed! Capturing screenshot...
+2026-06-29 23:04:54 INFO  Hooks - Ending Scenario: Add Product with status: FAILED
+2026-06-29 23:04:54 INFO  DriverFactory - Quitting WebDriver...
+2026-06-29 23:04:54 INFO  DriverFactory - WebDriver quit successfully.
+2026-06-29 23:04:54 INFO  Hooks - ---------------------------------------------------------
+2026-06-29 23:04:54 INFO  Hooks - ---------------------------------------------------------
+2026-06-29 23:04:54 INFO  Hooks - Starting Scenario: User Registration
+2026-06-29 23:04:54 INFO  DriverFactory - Initializing ChromeDriver...
+2026-06-29 23:04:55 INFO  DriverFactory - ChromeDriver initialized successfully.
+2026-06-29 23:04:55 INFO  Authentication - Executing step: User is in register page
+2026-06-29 23:04:55 INFO  BasePage - Redirecting to URL: https://food-ordering-app-z99l.vercel.app/login
+2026-06-29 23:04:56 INFO  Authentication - Executing step: User enters details and clicks register
+2026-06-29 23:04:56 INFO  BasePage - Starting user registration process...
+2026-06-29 23:04:56 INFO  BasePage - Clicking on element: By.xpath: //a[@routerlink='/register']
+2026-06-29 23:04:56 INFO  BasePage - Entering text: 'Vermithos' into element: By.xpath: (//input[@placeholder='Enter your name'])[1]
+2026-06-29 23:04:56 INFO  BasePage - Entering text: 'vermithos7@gmail.com' into element: By.xpath: (//input[@placeholder='Enter your email'])[1]
+2026-06-29 23:04:56 INFO  BasePage - Entering text: 'Vermithos1@123' into element: By.xpath: //input[@placeholder='Create a password (min 6, 1 uppercase, 1 number)']
+2026-06-29 23:04:57 INFO  BasePage - Entering text: '8888888888' into element: By.xpath: //input[@placeholder='Enter 10-digit phone number']
+2026-06-29 23:04:57 INFO  BasePage - Entering text: 'Coimbatore' into element: By.xpath: //textarea[@placeholder='Enter your full address']
+2026-06-29 23:04:57 INFO  BasePage - Clicking on element: By.xpath: //button[@class='btn-register']
+2026-06-29 23:04:57 INFO  BasePage - User registration process completed.
+2026-06-29 23:04:57 INFO  Authentication - Executing step: Verifying user is on login page
+2026-06-29 23:05:17 ERROR Hooks - Scenario Failed! Capturing screenshot...
+2026-06-29 23:05:18 INFO  Hooks - Ending Scenario: User Registration with status: FAILED
+2026-06-29 23:05:18 INFO  DriverFactory - Quitting WebDriver...
+2026-06-29 23:05:18 INFO  DriverFactory - WebDriver quit successfully.
+2026-06-29 23:05:18 INFO  Hooks - ---------------------------------------------------------
+2026-06-29 23:05:18 INFO  Hooks - ---------------------------------------------------------
+2026-06-29 23:05:18 INFO  Hooks - Starting Scenario: User Login
+2026-06-29 23:05:18 INFO  DriverFactory - Initializing ChromeDriver...
+2026-06-29 23:05:19 INFO  DriverFactory - ChromeDriver initialized successfully.
+2026-06-29 23:05:19 INFO  Authentication - Executing step: User is in the login page
+2026-06-29 23:05:19 INFO  BasePage - Redirecting to URL: https://food-ordering-app-z99l.vercel.app/login
+2026-06-29 23:05:20 INFO  Authentication - Executing step: User enters email and password
+2026-06-29 23:05:20 INFO  BasePage - Starting user login process...
+2026-06-29 23:05:20 INFO  BasePage - Entering text: 'vermithos3@gmail.com' into element: By.xpath: (//input[@placeholder='Enter your email'])
+2026-06-29 23:05:20 INFO  BasePage - Entering text: 'Vermithos1@123' into element: By.xpath: //input[@placeholder='Enter your password']
+2026-06-29 23:05:20 INFO  BasePage - Clicking on element: By.xpath: //button[@class='btn-login']
+2026-06-29 23:05:20 INFO  BasePage - User login process completed.
+2026-06-29 23:05:20 INFO  Authentication - Executing step: Verifying user is redirected to home page
+2026-06-29 23:05:21 INFO  Hooks - Ending Scenario: User Login with status: PASSED
+2026-06-29 23:05:21 INFO  DriverFactory - Quitting WebDriver...
+2026-06-29 23:05:21 INFO  DriverFactory - WebDriver quit successfully.
+2026-06-29 23:05:21 INFO  Hooks - ---------------------------------------------------------
+2026-06-29 23:05:21 INFO  Hooks - ---------------------------------------------------------
+2026-06-29 23:05:21 INFO  Hooks - Starting Scenario: user login to delivery page
+2026-06-29 23:05:21 INFO  DriverFactory - Initializing ChromeDriver...
+2026-06-29 23:05:22 INFO  DriverFactory - ChromeDriver initialized successfully.
+2026-06-29 23:05:22 INFO  EndToEnd - Executing step: User logs in with user credentials
+2026-06-29 23:05:22 INFO  BasePage - Redirecting to URL: https://food-ordering-app-z99l.vercel.app/login
+2026-06-29 23:05:23 INFO  BasePage - Starting user login process...
+2026-06-29 23:05:23 INFO  BasePage - Entering text: 'vermithos3@gmail.com' into element: By.xpath: (//input[@placeholder='Enter your email'])
+2026-06-29 23:05:23 INFO  BasePage - Entering text: 'Vermithos1@123' into element: By.xpath: //input[@placeholder='Enter your password']
+2026-06-29 23:05:23 INFO  BasePage - Clicking on element: By.xpath: //button[@class='btn-login']
+2026-06-29 23:05:23 INFO  BasePage - User login process completed.
+2026-06-29 23:05:23 INFO  EndToEnd - Executing step: User navigates to product page (scenario 2)
+2026-06-29 23:05:24 INFO  BasePage - Clicking on element: By.xpath: //a[@routerlink='/products']
+2026-06-29 23:05:24 INFO  EndToEnd - Executing step: User adds products, navigates to cart, and increments quantity
+2026-06-29 23:05:24 INFO  BasePage - Adding product to cart...
+2026-06-29 23:05:30 INFO  BasePage - Product added and navigated to cart.
+2026-06-29 23:05:30 INFO  BasePage - Clicking on element: By.xpath: //button[@class='btn-place-order']
+2026-06-29 23:05:51 ERROR Hooks - Scenario Failed! Capturing screenshot...
+2026-06-29 23:05:51 INFO  Hooks - Ending Scenario: user login to delivery page with status: FAILED
+2026-06-29 23:05:51 INFO  DriverFactory - Quitting WebDriver...
+2026-06-29 23:05:51 INFO  DriverFactory - WebDriver quit successfully.
+2026-06-29 23:05:51 INFO  Hooks - ---------------------------------------------------------
+2026-06-29 23:05:51 INFO  Hooks - ---------------------------------------------------------
+2026-06-29 23:05:51 INFO  Hooks - Starting Scenario: Adding Product to cart
+2026-06-29 23:05:51 INFO  DriverFactory - Initializing ChromeDriver...
+2026-06-29 23:05:52 INFO  DriverFactory - ChromeDriver initialized successfully.
+2026-06-29 23:05:52 INFO  User - Executing step: User logs in with user credentials
+2026-06-29 23:05:52 INFO  BasePage - Redirecting to URL: https://food-ordering-app-z99l.vercel.app/login
+2026-06-29 23:05:53 INFO  BasePage - Starting user login process...
+2026-06-29 23:05:53 INFO  BasePage - Entering text: 'vermithos3@gmail.com' into element: By.xpath: (//input[@placeholder='Enter your email'])
+2026-06-29 23:05:53 INFO  BasePage - Entering text: 'Vermithos1@123' into element: By.xpath: //input[@placeholder='Enter your password']
+2026-06-29 23:05:53 INFO  BasePage - Clicking on element: By.xpath: //button[@class='btn-login']
+2026-06-29 23:05:53 INFO  BasePage - User login process completed.
+2026-06-29 23:05:53 INFO  User - Executing step: User navigates to products page
+2026-06-29 23:05:54 INFO  BasePage - Clicking on element: By.xpath: //a[@routerlink='/products']
+2026-06-29 23:05:54 INFO  User - Executing step: User inspects product and adds to cart
+2026-06-29 23:05:54 INFO  BasePage - Adding product to cart...
+2026-06-29 23:06:00 INFO  BasePage - Product added and navigated to cart.
+2026-06-29 23:06:00 INFO  User - Executing step: Verify user sees product in cart page
+2026-06-29 23:06:00 INFO  Hooks - Ending Scenario: Adding Product to cart with status: PASSED
+2026-06-29 23:06:00 INFO  DriverFactory - Quitting WebDriver...
+2026-06-29 23:06:00 INFO  DriverFactory - WebDriver quit successfully.
+2026-06-29 23:06:00 INFO  Hooks - ---------------------------------------------------------
+2026-06-29 23:06:00 INFO  Hooks - ---------------------------------------------------------
+2026-06-29 23:06:00 INFO  Hooks - Starting Scenario: Placing order
+2026-06-29 23:06:00 INFO  DriverFactory - Initializing ChromeDriver...
+2026-06-29 23:06:01 INFO  DriverFactory - ChromeDriver initialized successfully.
+2026-06-29 23:06:01 INFO  User - Executing step: User logs in (scenario 2)
+2026-06-29 23:06:01 INFO  BasePage - Redirecting to URL: https://food-ordering-app-z99l.vercel.app/login
+2026-06-29 23:06:02 INFO  BasePage - Starting user login process...
+2026-06-29 23:06:02 INFO  BasePage - Entering text: 'vermithos3@gmail.com' into element: By.xpath: (//input[@placeholder='Enter your email'])
+2026-06-29 23:06:02 INFO  BasePage - Entering text: 'Vermithos1@123' into element: By.xpath: //input[@placeholder='Enter your password']
+2026-06-29 23:06:02 INFO  BasePage - Clicking on element: By.xpath: //button[@class='btn-login']
+2026-06-29 23:06:02 INFO  BasePage - User login process completed.
+2026-06-29 23:06:02 INFO  User - Executing step: User navigates to product page (scenario 2)
+2026-06-29 23:06:03 INFO  BasePage - Clicking on element: By.xpath: //a[@routerlink='/products']
+2026-06-29 23:06:03 INFO  User - Executing step: User adds products, navigates to cart, and increments quantity
+2026-06-29 23:06:03 INFO  BasePage - Adding product to cart...
+2026-06-29 23:06:08 INFO  BasePage - Product added and navigated to cart.
+2026-06-29 23:06:08 INFO  BasePage - Incrementing product quantity in cart...
+2026-06-29 23:06:08 INFO  BasePage - Clicking on element: By.xpath: //button[@class='qty-btn'][2]
+2026-06-29 23:06:08 INFO  User - Executing step: Verify user sees updated quantity
+2026-06-29 23:06:09 INFO  BasePage - Getting text from element: By.xpath: //span[@class='cart-badge']
+2026-06-29 23:06:09 INFO  Hooks - Ending Scenario: Placing order with status: PASSED
+2026-06-29 23:06:09 INFO  DriverFactory - Quitting WebDriver...
+2026-06-29 23:06:09 INFO  DriverFactory - WebDriver quit successfully.
+2026-06-29 23:06:09 INFO  Hooks - ---------------------------------------------------------

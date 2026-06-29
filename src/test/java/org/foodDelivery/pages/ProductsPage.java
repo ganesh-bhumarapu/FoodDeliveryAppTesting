@@ -30,13 +30,16 @@ public class ProductsPage extends BasePage{
     }
 
     public void addToCart() {
+        logger.info("Adding product to cart...");
         ExplicitWaitWithElementToBeClickable(product, 25);
         ExplicitWaitWithElementToBeClickable(addToCartButton, 15);
         ExplicitWaitWithElementToBeClickable(goToCartButton, 15);
+        logger.info("Product added and navigated to cart.");
     }
 
 
     public void incrementQuantity() {
+        logger.info("Incrementing product quantity in cart...");
         Click(incrementQuantityButton);
     }
 

@@ -22,13 +22,15 @@ public class LoginRegisterPage extends BasePage{
     }
 
     public void register() {
+        logger.info("Starting user registration process...");
         Click(registerBtn);
         EnterText(fullName, "Vermithos");
-        EnterText(email, "vermithos6@gmail.com");
+        EnterText(email, "vermithos7@gmail.com");
         EnterText(password, "Vermithos1@123");
         EnterText(phoneNumber, "8888888888");
-        EnterText(address, "Old Velariya");
+        EnterText(address, "Coimbatore");
         Click(registerSubmitBtn);
+        logger.info("User registration process completed.");
     }
 
 
@@ -37,9 +39,11 @@ public class LoginRegisterPage extends BasePage{
     }
 
     public void login(){
+        logger.info("Starting user login process...");
         EnterText(loginemail, "vermithos3@gmail.com");
         EnterText(loginpassword, "Vermithos1@123");
         Click(loginBtn);
+        logger.info("User login process completed.");
     }
 
     public String getCurrentUrl() {
